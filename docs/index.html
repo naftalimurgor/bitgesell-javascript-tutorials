@@ -18,41 +18,90 @@
 <div id="main">
 
     <h1 class="page-title">Home</h1>
-
-    
-
-
-
-    
-
-
     <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
 </div>
 
 <nav>
     <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BGLWallet.html">BGLWallet</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BGL_RPC_NODE">BGL_RPC_NODE</a></li><li><a href="global.html#buildTransactionObject">buildTransactionObject</a></li><li><a href="global.html#createHDWallet">createHDWallet</a></li><li><a href="global.html#getAccountBalance">getAccountBalance</a></li><li><a href="global.html#getAccountUTXO">getAccountUTXO</a></li><li><a href="global.html#getAddressTxHistory">getAddressTxHistory</a></li><li><a href="global.html#importWalletFromSeedPhrase">importWalletFromSeedPhrase</a></li><li><a href="global.html#importWalletWIFPrivateKey">importWalletWIFPrivateKey</a></li><li><a href="global.html#main">main</a></li></ul>
 </nav>
+<div style="padding-left: 80px">
+    <img src="Icon.png" alt="Bitgesell Logo" style="height: 60px;">
+    <h1>Welcome to Updated Bitgesell JavaScript Tutorials</h1>
+    <p>For the Web and Node.js</p>
 
+    <h2>Prerequisites</h2>
+    <ul>
+        <li>Node.js installed - <code>v22.0.0</code> is highly recommended.</li>
+        <li>Basic knowledge of JavaScript and async functions</li>
+        <li>An internet connection to access the Bitaps API</li>
+    </ul>
+
+    <h2>Introduction</h2>
+    <p>This tutorial covers the following areas:</p>
+
+    <h3>1. Wallet</h3>
+    <p><a href="./src/wallet/wallet.md">Wallet</a></p>
+    <ul>
+        <li>Creating a wallet - Seedphrases</li>
+        <li>Importing a wallet from Seedphrase (account 0 - account 9)</li>
+        <li>Importing a wallet from WIF private key</li>
+    </ul>
+
+    <h3>2. Transactions</h3>
+    <p><a href="./src/transactions/transactions.md">Transactions</a></p>
+    <ul>
+        <li>Transaction fees</li>
+        <li>Creating Transaction Objects</li>
+        <li>Signing a Transaction with a Private Key</li>
+        <li>Encoding Transaction objects into Hex format</li>
+        <li>Decoding Transaction objects to JSON format</li>
+        <li>Broadcasting signed Transactions to the Bitgesell Mainnet</li>
+    </ul>
+
+    <h3>3. UTXOs</h3>
+    <p><a href="./src/utxos/utxos.md">UTXOs</a></p>
+    <ul>
+        <li>Fetching address UTXOs</li>
+        <li>Adding UTXOs to a Transaction object</li>
+    </ul>
+
+    <h3>4. Balances</h3>
+    <p><a href="./src/balances/balances.md">Balances</a></p>
+    <ul>
+        <li>Fetching address balances</li>
+        <li>Handling BGL units with bgl-units/satoshi-bitcoin library</li>
+    </ul>
+
+    <h3>5. Explorer</h3>
+    <p><a href="./src/explorer/explorer.md">Explorer</a></p>
+    <ul>
+        <li>Fetching Transaction History using axios/fetch</li>
+        <li>Displaying Transaction list</li>
+    </ul>
+
+    <h3>6. RPC</h3>
+    <ul>
+        <li>RPC Nodes for Bitgesell</li>
+        <li>A basic example interacting with RPC</li>
+    </ul>
+
+    <h2>Examples</h2>
+    <p>All examples are under the <code>src/</code> directory, with each tutorial provided in its respective subdirectory.</p>
+
+    <h3>How to Run Each Example</h3>
+    <p>Ensure the following are installed:</p>
+    <ul>
+        <li>Node.js</li>
+        <li>NPM (comes bundled with Node.js)</li>
+    </ul>
+
+    <h4>Running an Example</h4>
+    <p>Navigate to the tutorial directory and run:</p>
+    <pre><code>cd src/wallet
+node index.js</code></pre>
+
+    <p>Feel free to modify and play around with the functions to observe the console outputs.</p>
+</div>
 <br class="clear">
 
 <footer>
